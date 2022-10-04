@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: darkslateblue;
+    display:flex;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    padding: 35px 0;
+    justify-content: space-between;
+}
+
+img{
+    height: 10%;
+    width: 10%;
+}
+
+a{
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2 rem;
+    position: relative;
+}
+
+a:before  {
+    content: "";
+    height: 3px;
+    width: 0%s;
+    background: yellowgreen;
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    transition: 0.4s ease-out;
+}
+
+a:hover::before{
+    width: 100%;
+}
